@@ -1,0 +1,29 @@
+<h2>{{recipeSelected.name}}</h2>
+<div class="row">
+    <div class="col-xs-12">
+        <button 
+        type="button" 
+        class="btn btn-primary dropdown-toggle pull-right">
+        Manage Recipe<span class="caret"></span>
+        </button> 
+        <ul class="dropdown-menu">
+            <li><a href="#">To Shopping List</a></li>
+            <li><a href="#">Edit Recipe</a></li>
+            <li><a href="#">Delete Recipe</a></li>
+        </ul>
+    </div>
+</div>
+<br>
+<img src="{{recipeSelected.imagePath}}" alt="{{recipeSelected.name}}" style="max-height: 300px">
+<br>
+<br>
+<div class="row">
+    <div class="col-xs-12">
+        {{recipeSelected.description}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        Ingridients
+    </div>
+</div>

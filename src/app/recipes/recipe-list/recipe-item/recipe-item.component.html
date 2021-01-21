@@ -1,0 +1,16 @@
+<a 
+    href="#"
+    class="list-group-item clearfix"
+    (click)="onPressed()">
+    <div class="pull-left">
+    <div class="list-group-item-heading"><strong>{{recipes.name}}</strong></div>
+    <div class="list-group-item-text"><em>{{recipes.description}}</em></div>
+    </div>
+    <span class="pull-right">
+      <img 
+      [src]="recipes.imagePath" 
+      alt="{{recipes.name}}"
+      class="img-responsive"
+      style="max-height: 50px">
+    </span>  
+</a>
